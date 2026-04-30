@@ -225,6 +225,7 @@ section {
   .bg-ring--1 { width: 380px; height: 380px; }
   .bg-ring--2 { width: 240px; height: 240px; }
   .bg-ring--3 { width: 200px; height: 200px; }
-  .bg-blob--1 { width: 280px; height: 280px; }
-  .bg-blob--2 { width: 200px; height: 200px; }
+  .bg-blob--1 { width: 220px; height: 220px; left: -140px; }
+  .bg-blob--2 { display: none; }
+  .bg-blob--3 { display: none; }
 }
