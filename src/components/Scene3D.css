@@ -59,5 +59,9 @@
 }
 
 @media (max-width: 768px) {
-  .scene3d__canvas-wrap { height: 320px; }
+  .scene3d__canvas-wrap { height: 300px; }
+}
+
+@media (max-width: 480px) {
+  .scene3d__canvas-wrap { height: 260px; }
 }

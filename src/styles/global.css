@@ -218,6 +218,13 @@ section {
 [data-theme="light"] .bg-diamond--3 { border-color: rgba(0, 100, 200, 0.12); }
 
 @media (max-width: 768px) {
-  section { padding: 4rem 0; }
+  html { font-size: 16px; }
+  section { padding: 3rem 0; }
   .container { padding: 0 1.25rem; }
+
+  .bg-ring--1 { width: 380px; height: 380px; }
+  .bg-ring--2 { width: 240px; height: 240px; }
+  .bg-ring--3 { width: 200px; height: 200px; }
+  .bg-blob--1 { width: 280px; height: 280px; }
+  .bg-blob--2 { width: 200px; height: 200px; }
 }
