@@ -1,0 +1,96 @@
+.section-sub {
+  font-size: 1rem;
+  color: var(--text3);
+  margin-top: 0.5rem;
+}
+
+/* ── Marquee clip wrapper ─────────────────────── */
+.tech-marquee-clip {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 8%,
+    #000 92%,
+    transparent 100%
+  );
+  margin-top: 2.5rem;
+  padding: 0.5rem 0 1rem;
+}
+
+/* Track — translateX driven by JS RAF loop */
+.tech-marquee-track {
+  display: flex;
+  will-change: transform;
+}
+
+/* ── One row of chips ─────────────────────────── */
+.tech-group {
+  display: flex;
+  gap: 0.75rem;
+  padding-right: 0.75rem;
+  flex: 0 0 auto;
+}
+
+/* ── Individual chip ──────────────────────────── */
+.tech-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.55rem 1rem 0.55rem 0.55rem;
+  border-radius: 100px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(12px);
+  white-space: nowrap;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  cursor: default;
+}
+
+.tech-chip:hover {
+  border-color: var(--tech-color, var(--accent1));
+  box-shadow: 0 0 0 1px var(--tech-color, var(--accent1)), 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.tech-chip__badge {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.tech-chip__name {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.01em;
+}
+
+.tech-chip__sep {
+  color: var(--text3);
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.tech-chip__cat {
+  font-size: 0.68rem;
+  color: var(--text3);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}

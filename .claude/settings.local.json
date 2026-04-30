@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//d/freelance/helen-portfolio/src/**)",
+      "WebFetch(domain:framer.university)",
+      "WebFetch(domain:www.shader.se)",
+      "Bash(npm run *)"
+    ]
+  }
+}

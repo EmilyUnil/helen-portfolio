@@ -1,0 +1,87 @@
+/* ============================
+   DARK THEME — Acid Editorial
+   ============================ */
+[data-theme="dark"] {
+  --bg: #0d0d0d;
+  --bg2: #121212;
+  --bg3: #111111;
+  --surface: #181818;
+  --surface2: rgba(24,24,24,0.85);
+  --border: rgba(255,255,255,0.07);
+  --text: #f0f0ee;
+  --text2: #8a8a88;
+  --text3: #505050;
+
+  --accent1: #c8f500;      /* Acid lime */
+  --accent2: #ffffff;      /* White */
+  --accent3: #8b5cf6;      /* Violet tertiary */
+  --accent4: #c8f500;
+
+  --glow1: rgba(200, 245, 0, 0.18);
+  --glow2: rgba(255, 255, 255, 0.06);
+
+  --card-bg: rgba(20,20,20,0.92);
+  --card-border: rgba(255,255,255,0.07);
+  --card-shadow: 0 1px 0 rgba(255,255,255,0.03), 0 4px 32px rgba(0,0,0,0.5);
+
+  --nav-bg: rgba(13,13,13,0.9);
+  --nav-border: rgba(255,255,255,0.06);
+
+  --input-bg: rgba(20,20,20,0.95);
+  --input-border: rgba(255,255,255,0.1);
+  --input-focus: var(--accent1);
+
+  --btn-text: #0d0d0d;
+
+  --hero-gradient: radial-gradient(ellipse 55% 45% at 75% 5%, rgba(200,245,0,0.07) 0%, transparent 65%),
+                   var(--bg);
+}
+
+/* ============================
+   LIGHT THEME — Editorial Mono
+   ============================ */
+[data-theme="light"] {
+  --bg: #f6f5f0;
+  --bg2: #eeede8;
+  --bg3: #f0efe9;
+  --surface: #ffffff;
+  --surface2: rgba(255,255,255,0.88);
+  --border: rgba(0,0,0,0.08);
+  --text: #111111;
+  --text2: #555555;
+  --text3: #999999;
+
+  --accent1: #111111;      /* Near-black — editorial */
+  --accent2: #525252;      /* Dark gray */
+  --accent3: #333333;
+  --accent4: #777777;
+
+  --glow1: rgba(0,0,0,0.07);
+  --glow2: rgba(0,0,0,0.04);
+
+  --card-bg: rgba(255,255,255,0.92);
+  --card-border: rgba(0,0,0,0.07);
+  --card-shadow: 0 1px 3px rgba(0,0,0,0.07), 0 4px 24px rgba(0,0,0,0.04);
+
+  --nav-bg: rgba(246,245,240,0.92);
+  --nav-border: rgba(0,0,0,0.07);
+
+  --input-bg: rgba(255,255,255,0.95);
+  --input-border: rgba(0,0,0,0.1);
+  --input-focus: var(--accent1);
+
+  --btn-text: #ffffff;
+
+  --hero-gradient: radial-gradient(ellipse 60% 50% at 80% 0%, rgba(0,0,0,0.03) 0%, transparent 65%),
+                   var(--bg);
+}
+
+/* Transition all themed props */
+body, .nav-bar, .card, input, textarea, button {
+  transition:
+    background 0.4s ease,
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    color 0.4s ease,
+    box-shadow 0.4s ease;
+}
