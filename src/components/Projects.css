@@ -67,7 +67,7 @@
 
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 62%;
   width: var(--cardW);
   height: var(--cardH);
   transform: translate3d(-50%, -50%, 0);

@@ -4,9 +4,9 @@ import { projects } from '../data/projects';
 import Icon from './Icon';
 import './Projects.css';
 
-const R           = 320;
-const PITCH       = 130;
-const Z_OFFSET    = -180;
+const R           = 400;
+const PITCH       = 200;
+const Z_OFFSET    = -220;
 const FACE_STR    = 44;
 const BLUR_MAX    = 10;
 const OPA_BACK    = 0.2;
